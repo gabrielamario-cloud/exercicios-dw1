@@ -1,0 +1,59 @@
+body {
+  font-family: Arial;
+  background: #1e1e2f;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.placar {
+  background: #2c2c54;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 320px;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  text-align: center;
+}
+
+.tempo {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+.times {
+  display: flex;
+  justify-content: space-between;
+}
+
+.time {
+  width: 45%;
+}
+
+.pontos {
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+button {
+  margin: 3px;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background: #706fd3;
+  color: white;
+  cursor: pointer;
+}
+
+.reset {
+  background: red;
+}
