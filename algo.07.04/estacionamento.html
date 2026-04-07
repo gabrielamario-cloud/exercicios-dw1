@@ -1,0 +1,35 @@
+r<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tarifacao</title>
+    <link rel="stylesheet" href="verde.css">
+</head>
+<body>
+     <h2>Sistema de Tarifacao de Estacionamento</h2>
+
+  <label>Horas estacionadas:</label><br>
+  <input type="number" id="horas" min="0" step="0.1">
+  
+  <br><br>
+
+  <input type="checkbox" id="carroGrande">
+  <label for="carroGrande">Carro Grande</label>
+  
+  <br><br>
+<input type="checkbox" id="carropequeno">
+  <label for="carropequeno">Carro Pequeno</label>
+  <br><br>
+  
+  <input type="checkbox" id="clienteFrequente">
+  <label for="clienteFrequente">Cliente Frequente</label>
+  
+  <br><br>
+
+  <button onclick="calcular()">Calcular Tarifa</button>
+
+  <h3 id="resultado">O valor total é R$ 0,00</h3>
+       <script src="tarifacao.js"></script>
+</body>
+</html>

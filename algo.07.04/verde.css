@@ -1,0 +1,74 @@
+/* Fundo da página */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #c8e6c9, #e8f5e9);
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container automático (pega tudo dentro do body) */
+body {
+    flex-direction: column;
+}
+
+/* Título */
+h2 {
+    color: #2e7d32;
+    text-align: center;
+}
+
+/* Organizar elementos */
+label,
+input,
+button,
+h3 {
+    width: 300px;
+    margin: 5px 0;
+}
+
+/* Inputs */
+input[type="number"] {
+    padding: 8px;
+    border-radius: 8px;
+    border: 2px solid #81c784;
+    outline: none;
+}
+
+input[type="number"]:focus {
+    border-color: #2e7d32;
+}
+
+/* Checkbox alinhado */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Botão */
+button {
+    background-color: #43a047;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2e7d32;
+}
+
+/* Resultado */
+#resultado {
+    background-color: #c8e6c9;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: #1b5e20;
+    font-weight: bold;
+}
