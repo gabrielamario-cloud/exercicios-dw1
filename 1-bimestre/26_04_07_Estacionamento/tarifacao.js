@@ -1,31 +1,43 @@
  function calcular() {
-      let horas = parseFloat(document.getElementById("horas").value);
+
+      let checkin = new Date(document.getElementById("checkin").value);
+      let checkout = new Date(document.getElementById("checkout").value);  
+
       let carroGrande = document.getElementById("carroGrande").checked;
       let clienteFrequente = document.getElementById("clienteFrequente").checked;
 
-      if (isNaN(horas) || horas <= 0) {
-        alert("Informe um número válido de horas.");
-        return;
-      }
+  if (isNaN(checkin) || isNaN(checkout)) {
+    alert("Informe datas válidas.");
+    return;
+  }
 
-      let valor = 0;
+  if (checkin >= checkout) {
+    alert("A saída deve ser depois da entrada.");
+    return;
+  }
 
-      if (horas >= 24) {
-        let dias = Math.floor(horas / 24);
-        let resto = horas % 24;
+  let diferencaMs = checkout - checkin;
+    let horas = diferencaMs / (1000 * 60 * 60);
 
-        valor += dias * 60;
+     let valor = 0;
 
-        if (resto > 0) {
-          valor += resto * 2.5;
-        }
+  if (horas >= 24) {
+    let dias = Math.floor(horas / 24);
+    let resto = horas % 24;
+
+    valor += dias * 60;
+
+    if (resto > 0) {
+      valor += resto * 2.5;
+    }
+
 
       } else {
         valor = 5;
 
-        if (horas > 1) {
+      if (horas > 1) {
           valor += (horas - 1) * 2.5;
-        }
+       }
       }
 
       if (carroGrande) {

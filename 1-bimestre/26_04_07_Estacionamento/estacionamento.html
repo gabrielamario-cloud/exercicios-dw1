@@ -1,4 +1,4 @@
-r<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="br">
 <head>
     <meta charset="UTF-8">
@@ -9,8 +9,13 @@ r<!DOCTYPE html>
 <body>
      <h2>Sistema de Tarifacao de Estacionamento</h2>
 
-  <label>Horas estacionadas:</label><br>
-  <input type="number" id="horas" min="0" step="0.1">
+  <label>check-in(entrada):</label>
+  <input type="datetime-local" id="checkin">
+
+  <br><br>
+
+  <label>check-out(saida):</label>
+  <input type="datetime-local" id="checkout">
   
   <br><br>
 
@@ -18,8 +23,10 @@ r<!DOCTYPE html>
   <label for="carroGrande">Carro Grande</label>
   
   <br><br>
+
 <input type="checkbox" id="carropequeno">
   <label for="carropequeno">Carro Pequeno</label>
+
   <br><br>
   
   <input type="checkbox" id="clienteFrequente">
