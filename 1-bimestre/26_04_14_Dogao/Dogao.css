@@ -1,0 +1,61 @@
+/* Fundo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1a0000;
+  color: white;
+  padding: 20px;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  color: red;
+}
+
+/* Tabela */
+table {
+  width: 400px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #330000;
+}
+
+/* Cabeçalho */
+th {
+  background-color: red;
+  padding: 10px;
+}
+
+/* Células */
+td {
+  padding: 10px;
+  border-bottom: 1px solid red;
+  text-align: center;
+}
+
+/* Botão */
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+/* Área de pedidos */
+#pedidos {
+  width: 400px;
+  margin: 20px auto;
+  background-color: #330000;
+  padding: 10px;
+}
+
+/* Total */
+#total {
+  font-weight: bold;
+  color: #00ff88;
+}
