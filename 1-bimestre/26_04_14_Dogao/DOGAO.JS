@@ -20,7 +20,7 @@ function renderProdutos() {
     <tr>
       <th>Produto</th>
       <th>Preço</th>
-      <th>Qtd</th>
+      <th>Quantidade</th>
     </tr>
   `;
 
